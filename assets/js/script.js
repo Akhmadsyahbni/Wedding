@@ -20,12 +20,6 @@ function mulai()
 	// back to top
 	window.scrollTo(0, 0)
 
-	 // Hilangkan tombol setelah pintu dibuka
-	//  const button = document.getElementById("open-door-btn");
-	//  if (button) {
-	// 	 button.style.display = "none";
-	//  }
-
 	var audioDoor = document.getElementById('doorSound')
 	audioDoor.play()
 
