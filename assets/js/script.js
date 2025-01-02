@@ -5,7 +5,7 @@ lightbox.option({
 	'alwaysShowNavOnTouchDevices': true,
 	'wrapAround': true
 })
-  
+
 
 // music
 var music = ''
@@ -69,7 +69,7 @@ function toggleMusic(event)
 }
 
 // date counter
-var countDownDate = new Date("Februari 2, 2025 09:00:00").getTime()
+var countDownDate = new Date("Jan 13, 2024 09:00:00").getTime()
 
 var x = setInterval(function() {
 	var now = new Date().getTime()
@@ -96,10 +96,10 @@ var x = setInterval(function() {
 
 // get url to pronoun and name
 const urlParams = new URLSearchParams(window.location.search)
-const pronoun = urlParams.get('p') || 'Saudara';
-const name = urlParams.get('n') || '';
-const namaSambutan = document.querySelector('#namaSambutan');
-namaSambutan.innerText = name ? `${pronoun} ${name},` : `${pronoun},`;
+const pronoun = urlParams.get('p')
+const name = urlParams.get('n')
+const namaSambutan = document.querySelector('#namaSambutan')
+namaSambutan.innerText = `${pronoun} ${name},`
 
 // copy text
 function copyText(el)
