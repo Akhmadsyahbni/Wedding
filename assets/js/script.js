@@ -96,10 +96,10 @@ var x = setInterval(function() {
 
 // get url to pronoun and name
 const urlParams = new URLSearchParams(window.location.search)
-const pronoun = urlParams.get('p')
-const name = urlParams.get('n')
-const namaSambutan = document.querySelector('#namaSambutan')
-namaSambutan.innerText = `${pronoun} ${name},`
+const pronoun = urlParams.get('p') || 'Saudara';
+const name = urlParams.get('n') || '';
+const namaSambutan = document.querySelector('#namaSambutan');
+namaSambutan.innerText = name ? `${pronoun} ${name},` : `${pronoun},`;
 
 // copy text
 function copyText(el)
@@ -150,19 +150,3 @@ form.addEventListener('submit', e => {
       console.error('Error!', error.message);
     });
 });
-
-
-
-
-  
-// const scriptURL = 'https://script.google.com/macros/s/AKfycbwdDo47rBpCvTU8_O-Z9y-aP-G0LSPWIv6kYLQbSldriKxR6aAUabI6TBJ3p6G8Ac8soA/exec';
-// // const form = document.getElementById('Rsvp_Wedding');
-
-// const form = document.forms['Rsvp_Wedding']
-
-// form.addEventListener('submit', e => {
-//   e.preventDefault()
-//   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-// 	.then(response => console.log('Success!', response))
-// 	.catch(error => console.error('Error!', error.message))
-// })
