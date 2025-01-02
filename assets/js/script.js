@@ -7,6 +7,21 @@ lightbox.option({
 })
 
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+	anchor.addEventListener('click', function (e) {
+	  e.preventDefault();
+	  const target = document.querySelector(this.getAttribute('href'));
+	  if (target) {
+		window.scrollTo({
+		  top: target.offsetTop,
+		  behavior: 'smooth' // Ubah menjadi 'auto' jika tidak ingin smooth scroll
+		});
+	  }
+	});
+  });
+  
+
+
 // music
 var music = ''
 audio = document.querySelector('.audio')
