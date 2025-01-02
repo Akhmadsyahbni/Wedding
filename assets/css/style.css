@@ -524,7 +524,7 @@ body.transition {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 1) 100%), url('../img/penutup3.jpg');
+	background: linear-gradient(to bottom, rgba(250, 248, 248, 0.452) 0%, rgba(204, 204, 204, 0.568) 60%, rgba(224, 224, 224, 0.726) 100%), url('../img/penutup3.jpg');
 	background-position: center;
 	background-size: cover;
 }
