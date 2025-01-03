@@ -51,6 +51,22 @@ body.transition {
 	transition: transform 1s ease-in-out;
 }
 
+.img-circle {
+	width: 350px; /* Pastikan width dan height sama */
+	height: 350px;
+	object-fit: cover; /* Menjaga proporsi gambar */
+	border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+}
+
+
+
+.gelar {
+	font-family: Arial, sans-serif; /* Font biasa untuk gelar */
+	font-weight: normal; /* Mengatur berat font agar normal */
+	font-size: 0.8em; /* Ukuran teks gelar lebih kecil */
+}
+  
+
 .doors {
 	width: 400px;
 	height: 500px;
@@ -187,7 +203,7 @@ body.transition {
 #hero-section {
 	width: 100%;
 	height: 100vh;
-	background: url("../img/foto-pengantin.jpg") top left;
+	background: url("../img/foto-pengantin2.jpg") top left;
 	background-size: cover;
 	position: relative;
 	background-position: center;
@@ -501,7 +517,7 @@ body.transition {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: linear-gradient(to bottom,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.144) 60%, rgba(0, 0, 0, 0.192) 100%), url('../img/penutup3.jpg');
+	background: linear-gradient(to bottom,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.37) 60%, rgba(0, 0, 0, 0.404) 100%), url('../img/penutup-3.jpg');
 	background-position: center;
 	background-size: cover;
 }
