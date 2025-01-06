@@ -96,8 +96,8 @@ var x = setInterval(function() {
 
 // get url to pronoun and name
 const urlParams = new URLSearchParams(window.location.search)
-const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i'
-const name = urlParams.get('n') || ''
+const pronoun = urlParams.get('p') 
+const name = urlParams.get('n') 
 const namaSambutan = document.querySelector('#namaSambutan')
 namaSambutan.innerText = `${pronoun} ${name},`
 
